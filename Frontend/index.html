@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camp Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Camp Registration Form</h1>
+        <p>To book a place in the camp, you must complete the form below accurately.</p>
+        <hr>
+        <form style="margin-top: 20px;">
+          
+            <p>Your Name</p>
+            <div class="flex-row">
+                <div class="form-group after-label" data-label="first-name">
+                    
+                    <input type="text" id="first-name" name="first-name">
+                    
+                </div>
+                <div class="form-group after-label" data-label="last-name">                    
+
+                    <input type="text" id="last-name" name="last-name">
+                   
+                </div>
+            </div>
+
+            <p>Birth Date</p>
+            <div class="flex-row">
+                <div class="form-group after-label" data-label="Month">
+                    <select class="bg" id="birth-month" name="birth-month" >
+                        <option class="fl" value="">Please select a month</option>
+                    </select>
+                </div>
+                <div class="form-group after-label" data-label="Day">
+                    <select class="bg" id="birth-day" name="birth-day">
+                        <option class="fl" value="">Please select a day</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group after-label" data-label="Year">
+                    
+                    <select class="bg" id="birth-year" name="birth-year">
+                        <option class="fl" value="">Please select a year</option>
+                      
+                    </select>
+                </div>
+            </div>
+
+           
+            <div class="flex-row">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="name-tag">Desired Name Tag</label>
+                    <input type="text" id="name-tag" name="name-tag">
+                </div>
+            </div>
+
+         
+            <div class="form-group">
+                <label for="address1">Primary Address</label>
+                <input type="text" id="address1" name="address1" placeholder="Street Address">
+            </div>
+            <div class="form-group">
+                <input type="text" id="address2" name="address2" placeholder="Street Address Line 2">
+            </div>
+            <div class="flex-row">
+                <div class="form-group">
+                    <input type="text" id="city" name="city" placeholder="City">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="state" name="state" placeholder="State / Province">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="zip" name="zip" placeholder="Postal / Zip Code">
+                </div>
+            </div>
+
+            
+            <div class="form-group">
+                <label>Select Camp shirt size</label>
+                <div class="flex-row">
+                    <div class="grid-2">
+                        <label><input type="radio" name="shirt-size" value="small"> Small</label>
+                        <label><input type="radio" name="shirt-size" value="medium"> Medium</label>
+                        <label><input type="radio" name="shirt-size" value="large"> Large</label>
+                        <label><input type="radio" name="shirt-size" value="extra-large"> Extra-large</label>
+                    </div>
+                   
+                </div>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="restrictions">Please provide any medical or dietary restrictions you have</label>
+                <textarea id="restrictions" name="restrictions"></textarea>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="hear-about">How did you hear about Camp?</label>
+                <select class="bg" id="hear-about" name="hear-about">
+                    <option value="">Please Select</option>
+                   
+                </select>
+            </div>
+            <div style="display: flex; justify-content: end; width: 100%;" >
+                <button style="width: max-content; padding: .5rem 1rem; background: lightseagreen; color: white; border: none; margin-top: 1rem;" type="submit">Next</button>
+            </div>
+   
+        </form>
+    </div>
+
+</body>
+</html>

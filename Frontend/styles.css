@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: max-content;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+
+
+.flex-row label {
+    margin-right: 1rem;
+}
+
+.after-label::after {
+    display: block;
+    margin-top: .5rem;
+    content: attr(data-label);
+    font-weight: normal;
+    font-size: .8rem;
+    color: #666;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bg{
+    background-color: white;
+}
+
+.fl{
+    font-weight: lighter;
+    color: gray;
+}
