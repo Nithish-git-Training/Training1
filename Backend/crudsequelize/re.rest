@@ -1,0 +1,32 @@
+POST http://localhost:3000/users
+Content-Type: application/json
+
+
+{
+    "id":"1",
+    "username":"nithish",
+    "email":"pnithish77@gmail.com",
+    "password":"nithish3",
+    "phone":223434422,
+    "status":"Inactive",
+
+    "id":"2",
+    "username":"mani",
+    "email":"mnnnn44@gmail.com",
+    "password":"manhhh5",
+    "phone":223487867,
+    "status":"Active"
+}
+###
+GET http://localhost:3000/users
+
+###
+
+PUT http://localhost:3000/users/2
+Content-Type: application/json
+
+{
+    "username":"dinesh"
+}
+###
+DELETE http://localhost:3000/users/2
